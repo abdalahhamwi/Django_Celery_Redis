@@ -13,11 +13,13 @@ services:
       - .:/app
 
   redis:
-    image: redis:latest
     container_name: redis
+    image: redis:latest
 
   celery:
+    container_name: celery
     build: .
     command: celery -A project worker -l INFO
+    restart: always
     depends_on:
       - redis
