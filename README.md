@@ -23,8 +23,8 @@ This setup is ideal for handling background jobs such as sending emails, schedul
 
 
 
-## 🔧 Installation & Setup
+# 🐳 Run the Project with Docker
 
-### 1️⃣ Clone the project
+## 1️⃣ Build & start all services
 ```bash
-git clone https://github.com/abdalahhamwi/Django_Celery_Redis.git
+docker-compose up --build
