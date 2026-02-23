@@ -23,3 +23,5 @@ services:
     restart: always
     depends_on:
       - redis
+    volumes: 
+      - .:/app
